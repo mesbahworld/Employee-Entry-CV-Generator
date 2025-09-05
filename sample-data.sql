@@ -1,0 +1,90 @@
+-- ===============================
+-- PASS 4: Data Export
+-- ===============================
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_DEPARTMENT_MASTER
+-- ===============================
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('1', 'IT', 'Information Technology', NULL, 'Y', '30-AUG-25');
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('2', 'HR', 'Human Resources', NULL, 'Y', '30-AUG-25');
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('5', 'OPS', 'Operations', NULL, 'Y', '30-AUG-25');
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('6', 'ADMIN', 'Administration', NULL, 'Y', '30-AUG-25');
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('3', 'FIN', 'Finance & Accounts', NULL, 'Y', '30-AUG-25');
+INSERT INTO PG1_DEPARTMENT_MASTER (DEPT_ID, DEPT_CODE, DEPT_NAME, DEPT_HEAD, IS_ACTIVE, CREATED_DATE) VALUES ('4', 'MKT', 'Marketing & Sales', NULL, 'Y', '30-AUG-25');
+-- 6 sample rows shown out of 6 total
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_DESIGNATION_MASTER
+-- ===============================
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('1', 'SR_DEV', 'Senior Developer', '1', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('2', 'JR_DEV', 'Junior Developer', '1', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('3', 'IT_MGR', 'IT Manager', '1', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('4', 'HR_MGR', 'HR Manager', '2', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('5', 'HR_EXE', 'HR Executive', '2', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('6', 'ACC_MGR', 'Accounts Manager', '3', 'Y', '30-AUG-25');
+INSERT INTO PG1_DESIGNATION_MASTER (DESIG_ID, DESIG_CODE, DESIG_NAME, DEPT_ID, IS_ACTIVE, CREATED_DATE) VALUES ('7', 'LEAD_DEV', 'Lead Developer', '1', 'Y', '30-AUG-25');
+-- 7 sample rows shown out of 7 total
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_EMPLOYEE_EDUCATION
+-- ===============================
+INSERT INTO PG1_EMPLOYEE_EDUCATION (EDU_ID, EMP_ID, DEGREE_TYPE, DEGREE_TITLE, INSTITUTION_NAME, PASSING_YEAR, RESULT_TYPE, RESULT_VALUE, DURATION_YEARS, MAJOR_SUBJECT, IS_CURRENT, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('81', '1', 'HSC', 'Higher Secondary Certificate', 'Government Science College', '2012', 'GPA', '3.80', '2', 'Science', 'N', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EDUCATION (EDU_ID, EMP_ID, DEGREE_TYPE, DEGREE_TITLE, INSTITUTION_NAME, PASSING_YEAR, RESULT_TYPE, RESULT_VALUE, DURATION_YEARS, MAJOR_SUBJECT, IS_CURRENT, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('82', '1', 'Bachelor', 'Bachelor of Science (B.Sc.)', 'Government Titumir College', '2016', NULL, '2.85', '4', 'Mathematics', 'N', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EDUCATION (EDU_ID, EMP_ID, DEGREE_TYPE, DEGREE_TITLE, INSTITUTION_NAME, PASSING_YEAR, RESULT_TYPE, RESULT_VALUE, DURATION_YEARS, MAJOR_SUBJECT, IS_CURRENT, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('83', '1', 'SSC', 'Secondary School Certificate', 'Swarupkathi Collegiate Academy', '2009', 'GPA', '5.00', '2', 'Science', 'N', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EDUCATION (EDU_ID, EMP_ID, DEGREE_TYPE, DEGREE_TITLE, INSTITUTION_NAME, PASSING_YEAR, RESULT_TYPE, RESULT_VALUE, DURATION_YEARS, MAJOR_SUBJECT, IS_CURRENT, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('16', '11', 'BSc', 'Computer Science', 'Dhaka University', '2012', 'CGPA', '3.8', '4', 'CSE', 'N', '31-AUG-25', 'UNORGANIZED', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EDUCATION (EDU_ID, EMP_ID, DEGREE_TYPE, DEGREE_TITLE, INSTITUTION_NAME, PASSING_YEAR, RESULT_TYPE, RESULT_VALUE, DURATION_YEARS, MAJOR_SUBJECT, IS_CURRENT, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('17', '11', 'MSc', 'Software Engineering', 'BUET', '2014', 'CGPA', '3.9', '2', 'SE', 'N', '31-AUG-25', 'UNORGANIZED', NULL, NULL);
+-- 5 sample rows shown out of 5 total
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_EMPLOYEE_EXPERIENCE
+-- ===============================
+INSERT INTO PG1_EMPLOYEE_EXPERIENCE (EXP_ID, EMP_ID, COMPANY_NAME, DESIGNATION, DEPARTMENT, START_DATE, END_DATE, IS_CURRENT, JOB_RESPONSIBILITIES, SALARY_RANGE, REASON_FOR_LEAVING, SUPERVISOR_NAME, SUPERVISOR_CONTACT, LOCATION, EMPLOYMENT_TYPE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('79', '1', 'Projman Technology', 'Oracle Database Architect (lead)', 'IT', '01-APR-21', '31-MAR-23', 'N', 'Project: Bangladesh Bridge Authority Government ERP System
+-Led team of 13 developers in building ERP system for infrastructure project
+-Designed database architecture handling 500+ concurrent users
+-Implemented role-based security and audit trails for sensitive government data
+-Developed complex business logic modules for contract management and approval workflows
+-Optimized database performance reducing report generation time by 60%
+-Conducted business analysis and requirements gathering for government stakeholders
+-Implemented data migration strategies from legacy systems to Modern Oracle APEX
+-Provided technical leadership and mentoring to junior developers', '53000', 'Got better opportunity', NULL, NULL, 'Mohakhali, Dhaka', 'Full-time', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EXPERIENCE (EXP_ID, EMP_ID, COMPANY_NAME, DESIGNATION, DEPARTMENT, START_DATE, END_DATE, IS_CURRENT, JOB_RESPONSIBILITIES, SALARY_RANGE, REASON_FOR_LEAVING, SUPERVISOR_NAME, SUPERVISOR_CONTACT, LOCATION, EMPLOYMENT_TYPE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('80', '1', 'FlingEx', 'Software Developer (Lead)', 'IT', '01-AUG-23', '30-APR-25', 'N', '-Led development team of 4 developers for parcel management system handling 10,000+ daily transactions
+-Designed and implemented REST APIs for mobile and web clients using ORDS
+-Developed complex Oracle APEX reports and dashboards for business analytics
+-Optimized PL/SQL routines improving system performance by 35%
+-Implemented automated data validation processes reducing errors by 40%
+-Architected high-performance logistics tracking system with real-time updates
+-Created automated reporting solutions reducing manual work by 80%
+-Managed database administration tasks including backup, recovery, and performance tuning', '60000', 'Company goes bankrupt', NULL, NULL, 'Banani, Dhaka', 'Full-time', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EXPERIENCE (EXP_ID, EMP_ID, COMPANY_NAME, DESIGNATION, DEPARTMENT, START_DATE, END_DATE, IS_CURRENT, JOB_RESPONSIBILITIES, SALARY_RANGE, REASON_FOR_LEAVING, SUPERVISOR_NAME, SUPERVISOR_CONTACT, LOCATION, EMPLOYMENT_TYPE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('81', '1', 'Upwork Marketplace', 'Freelancer', NULL, '01-JAN-15', '01-JAN-21', 'N', '-Developed responsive web applications for international clients using HTML5, CSS3, and JavaScript
+-Created user-centered interfaces improving conversion rates by 40%
+-Implemented front-end solutions with focus on user experience and accessibility
+-Gained experience in full project lifecycle from requirements to deployment', '30000-50000', 'Got opportunity in full time corporaate job', NULL, NULL, 'Banani, Dhaka', 'Remote', '04-SEP-25', 'nobody', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EXPERIENCE (EXP_ID, EMP_ID, COMPANY_NAME, DESIGNATION, DEPARTMENT, START_DATE, END_DATE, IS_CURRENT, JOB_RESPONSIBILITIES, SALARY_RANGE, REASON_FOR_LEAVING, SUPERVISOR_NAME, SUPERVISOR_CONTACT, LOCATION, EMPLOYMENT_TYPE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('11', '11', 'ABC Ltd', 'Software Engineer', 'IT', '01-JAN-15', '01-JAN-18', 'N', 'Development', '30k-40k', 'Better opportunity', 'Mr. X', '0123456789', 'Dhaka', 'Full-time', '31-AUG-25', 'UNORGANIZED', NULL, NULL);
+INSERT INTO PG1_EMPLOYEE_EXPERIENCE (EXP_ID, EMP_ID, COMPANY_NAME, DESIGNATION, DEPARTMENT, START_DATE, END_DATE, IS_CURRENT, JOB_RESPONSIBILITIES, SALARY_RANGE, REASON_FOR_LEAVING, SUPERVISOR_NAME, SUPERVISOR_CONTACT, LOCATION, EMPLOYMENT_TYPE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('12', '11', 'XYZ Ltd', 'Senior Software Engineer', 'IT', '01-FEB-18', NULL, 'Y', 'Team Lead', '50k-60k', NULL, 'Mr. Y', '0987654321', 'Chittagong', 'Full-time', '31-AUG-25', 'UNORGANIZED', NULL, NULL);
+-- 5 sample rows shown out of 5 total
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_EMPLOYEE_MASTER
+-- ===============================
+INSERT INTO PG1_EMPLOYEE_MASTER (EMP_ID, EMP_CODE, FIRST_NAME, LAST_NAME, FULL_NAME, EMAIL, PHONE, MOBILE, NID, DATE_OF_BIRTH, GENDER, BLOOD_GROUP, RELIGION, DEPARTMENT_ID, DEPARTMENT_NAME, DESIGNATION_ID, DESIGNATION_NAME, JOIN_DATE, SALARY, ADDRESS_PRESENT, ADDRESS_PERMANENT, EMERGENCY_CONTACT_NAME, EMERGENCY_CONTACT_PHONE, MARITAL_STATUS, SKILLS, PHOTO, PHOTO_FILENAME, PHOTO_MIME_TYPE, IS_ACTIVE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('1', 'EMP00001', 'Md. Mesbah', 'Uddin', 'Md. Mesbah Uddin', 'mesbahworld@yahoo.com', '8012345', '801733561247', '19940023500002325', '22-NOV-95', 'M', 'A+', 'ISLAM', '1', 'Information Technology', '7', 'Lead Developer', '01-SEP-25', '80000', 'Kazipara, Dhaka 1216', 'Swarupkathi, Pirojpur, Barishal', '8801736000000', '880173600', 'Single', '[{"name":"Oracle","level":"Advanced","years":2023},{"name":"sql","level":"Expert","years":5},{"name":"plsql","level":"Expert","years":5},{"name":"oracle apex","level":"Expert","years":5}]', NULL, 'Mesbah.png', 'image/png', 'Y', '31-AUG-25', 'UNORGANIZED', '06-SEP-25', 'UNORGANIZED');
+INSERT INTO PG1_EMPLOYEE_MASTER (EMP_ID, EMP_CODE, FIRST_NAME, LAST_NAME, FULL_NAME, EMAIL, PHONE, MOBILE, NID, DATE_OF_BIRTH, GENDER, BLOOD_GROUP, RELIGION, DEPARTMENT_ID, DEPARTMENT_NAME, DESIGNATION_ID, DESIGNATION_NAME, JOIN_DATE, SALARY, ADDRESS_PRESENT, ADDRESS_PERMANENT, EMERGENCY_CONTACT_NAME, EMERGENCY_CONTACT_PHONE, MARITAL_STATUS, SKILLS, PHOTO, PHOTO_FILENAME, PHOTO_MIME_TYPE, IS_ACTIVE, CREATED_DATE, CREATED_BY, MODIFIED_DATE, MODIFIED_BY) VALUES ('11', 'EMP00002', 'John', 'Doe', 'John Doe', 'john.doe@updated.com', '1234567890', '9876543210', '1234567890123', '01-JAN-90', 'M', 'O+', 'Islam', '1', 'Information Technology', '2', 'Junior Developer', '01-JAN-20', '50000', 'Dhaka', 'Chittagong', 'Jane Doe', '0123456789', 'Married', NULL, NULL, NULL, NULL, 'Y', '31-AUG-25', 'UNORGANIZED', '31-AUG-25', 'UNORGANIZED');
+-- 2 sample rows shown out of 2 total
+
+-- ===============================
+-- DATA: UNORGANIZED.PG1_LOOKUP_VALUES
+-- ===============================
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('38', 'GENDER', 'M', 'Male', '1', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('39', 'GENDER', 'F', 'Female', '2', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('40', 'GENDER', 'O', 'Other', '3', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('41', 'BLOOD_GROUP', 'A+', 'A+', '1', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('42', 'BLOOD_GROUP', 'A-', 'A-', '2', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('43', 'BLOOD_GROUP', 'B+', 'B+', '3', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('44', 'BLOOD_GROUP', 'B-', 'B-', '4', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('45', 'BLOOD_GROUP', 'AB+', 'AB+', '5', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('46', 'BLOOD_GROUP', 'AB-', 'AB-', '6', 'Y', '30-AUG-25');
+INSERT INTO PG1_LOOKUP_VALUES (LOOKUP_ID, LOOKUP_TYPE, LOOKUP_CODE, LOOKUP_VALUE, DISPLAY_ORDER, IS_ACTIVE, CREATED_DATE) VALUES ('47', 'BLOOD_GROUP', 'O+', 'O+', '7', 'Y', '30-AUG-25');
+-- 10 sample rows shown out of 16 total
+
+
+
+
